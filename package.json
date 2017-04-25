@@ -1,12 +1,12 @@
 {
-  "name": "test-svc",
+  "name": "{[SERVICE_NAME]}-svc",
   "version": "0.0.1",
-  "description": "fancy service description",
+  "description": "{[SERVICE_NAME]} service",
   "bin": {
-    "test-svc": "./bin/test-svc"
+    "{[SERVICE_NAME]}-svc": "./bin/{[SERVICE_NAME]}-svc"
   },
   "scripts": {
-    "start": "nodemon bin/test-svc --watch lib | bunyan --color",
+    "start": "nodemon bin/{[SERVICE_NAME]}-svc --watch lib | bunyan --color",
     "test": "jest"
   },
   "dependencies": {
@@ -34,9 +34,5 @@
     "jest": "^19.0.2",
     "nodemon": "^1.11.0"
   },
-  "keywords": [
-    "fix",
-    "config"
-  ],
   "license": "ISC"
 }
