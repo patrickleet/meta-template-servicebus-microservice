@@ -2,7 +2,13 @@
   "name": "test-svc",
   "version": "0.0.1",
   "description": "fancy service description",
-  "main": "index.js",
+  "bin": {
+    "test-svc": "./bin/test-svc"
+  },
+  "scripts": {
+    "start": "nodemon bin/test-svc --watch lib | bunyan --color",
+    "test": "jest"
+  },
   "dependencies": {
     "async": "^1.4.2",
     "body-parser": "^1.15.0",
@@ -11,7 +17,6 @@
     "debug": "^2.2.0",
     "errortrap": "^1.0.2",
     "express": "^4.13.4",
-    "jest": "^19.0.2",
     "llog": "0.0.9",
     "lodash": "^3.9.3",
     "morgan": "^1.6.1",
@@ -25,9 +30,9 @@
     "servicebus-retry": "0.0.10",
     "superagent": "^1.8.3"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "jest"
+  "devDependencies": {
+    "jest": "^19.0.2",
+    "nodemon": "^1.11.0"
   },
   "keywords": [
     "fix",
