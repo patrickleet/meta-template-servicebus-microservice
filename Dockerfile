@@ -1,5 +1,5 @@
 FROM node:7
-MAINTAINER Patrick Scott <pat@patscott.io>
+MAINTAINER {[FULL_NAME]} <{[EMAIL]}>
 
 ENV NODE_ENV=development
 ENV HOME=/home/
