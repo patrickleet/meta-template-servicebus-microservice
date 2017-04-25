@@ -16,7 +16,7 @@ services:
     networks:
       - servicebus
 
-  test-svc:
+  {[SERVICE_NAME]}-svc:
     build: .
     volumes:
       - .:/home/service/
