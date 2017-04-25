@@ -1,11 +1,8 @@
 {
-  "name": "{[SERVICE_NAME]}-svc",
+  "name": "test-svc",
   "version": "0.0.1",
   "description": "fancy service description",
   "main": "index.js",
-  "directories": {
-    "test": "jest"
-  },
   "dependencies": {
     "async": "^1.4.2",
     "body-parser": "^1.15.0",
@@ -14,6 +11,7 @@
     "debug": "^2.2.0",
     "errortrap": "^1.0.2",
     "express": "^4.13.4",
+    "jest": "^19.0.2",
     "llog": "0.0.9",
     "lodash": "^3.9.3",
     "morgan": "^1.6.1",
@@ -27,13 +25,9 @@
     "servicebus-retry": "0.0.10",
     "superagent": "^1.8.3"
   },
-  "devDependencies": {
-    "mocha": "^1.21.4",
-    "should": "^7.0.1",
-    "sinon": "^1.10.3"
-  },
+  "devDependencies": {},
   "scripts": {
-    "test": "mocha"
+    "test": "jest"
   },
   "keywords": [
     "fix",

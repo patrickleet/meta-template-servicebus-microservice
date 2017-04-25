@@ -1,0 +1,32 @@
+version: '2.1'
+
+networks:
+  servicebus:
+
+services:
+
+  rabbitmq:
+    image: rabbitmq
+    hostname: rabbitmq
+    networks:
+      - servicebus
+
+  redis:
+    image: redis
+    networks:
+      - servicebus
+
+  test-svc:
+    build: .
+    volumes:
+      - .:/home/service/
+      - /home/service/node_modules
+    links:
+      - rabbitmq
+      - redis
+    environment:
+      - RABBITMQ_URL=amqp://rabbitmq:5672
+      - REDIS.HOST=redis
+      - NODE_ENV=development
+    networks:
+      - servicebus
