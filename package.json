@@ -10,28 +10,28 @@
     "test": "jest"
   },
   "dependencies": {
-    "async": "^1.4.2",
+    "async": "^2.6.0",
     "body-parser": "^1.15.0",
     "bunyan": "^1.5.1",
-    "cconfig": "^0.2.0",
-    "debug": "^2.2.0",
+    "cconfig": "^1.2.4",
+    "debug": "^3.1.0",
     "errortrap": "^1.0.2",
     "express": "^4.13.4",
-    "llog": "0.0.9",
-    "lodash": "^3.9.3",
+    "llog": "0.0.13",
+    "lodash": "^4.17.5",
     "morgan": "^1.6.1",
     "node-uuid": "^1.4.3",
     "on-headers": "^1.0.1",
     "path": "^0.12.7",
     "pretty-hrtime": "^1.0.2",
-    "servicebus": "^1.0.21",
+    "servicebus": "^2.2.0",
     "servicebus-message-domain": "0.0.0",
     "servicebus-register-handlers": "^0.1.5",
-    "servicebus-retry": "0.0.10",
-    "superagent": "^1.8.3"
+    "servicebus-retry": "0.0.11",
+    "superagent": "^3.8.2"
   },
   "devDependencies": {
-    "jest": "^19.0.2",
+    "jest": "^22.4.2",
     "nodemon": "^1.11.0"
   },
   "license": "ISC"
