@@ -18,7 +18,7 @@
     "errortrap": "^1.0.2",
     "express": "^4.13.4",
     "llog": "0.0.9",
-    "lodash": "^3.9.3",
+    "lodash": "^4.0.0",
     "morgan": "^1.6.1",
     "node-uuid": "^1.4.3",
     "on-headers": "^1.0.1",
